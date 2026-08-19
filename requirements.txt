@@ -9,3 +9,4 @@ torch>=2.0.0
 torch_geometric>=2.3.0
 shap>=0.42.0
 kaggle>=1.5.13
+jupyterlab>=4.0.0
