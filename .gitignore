@@ -1,0 +1,25 @@
+# Data files and archives
+data/
+*.zip
+*.tar.gz
+*.parquet
+
+# Temporary and output CSVs
+*.csv
+
+# Python cache and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and OS files
+.DS_Store
+.vscode/
+.idea/
+*.log
