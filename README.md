@@ -117,7 +117,7 @@ elliptic-illicit-transaction-classification/
 ### Option A: Local Execution
 1. Clone the repository and install dependencies:
    ```bash
-   git clone https://github.com/your-username/elliptic-illicit-transaction-classification.git
+     git clone https://github.com/IsaakAlemu/elliptic-illicit-transaction-classification.git
    cd elliptic-illicit-transaction-classification
    pip install -r requirements.txt
    ```
