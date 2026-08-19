@@ -1,6 +1,7 @@
 # Classifying Illicit Bitcoin Transactions on the Elliptic Data Set
 ### Comparing Tabular, Graph-Engineered, and Graph Neural Network Classifiers with a Statistical Diagnosis of Time-Based Distribution Shift
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IsaakAlemu/elliptic-illicit-transaction-classification/blob/main/notebooks/elliptic_full_project.ipynb)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch Geometric](https://img.shields.io/badge/PyTorch%20Geometric-2.0+-orange.svg)](https://pytorch-geometric.readthedocs.io/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-1.7+-green.svg)](https://xgboost.readthedocs.io/)
@@ -116,28 +117,31 @@ elliptic-illicit-transaction-classification/
         └── elliptic_txs_edgelist.csv
 ```
 
-### Option A: Local Execution
+### Option A: Instant Browser / GitHub Review (No Setup Required)
+The master notebook [`notebooks/elliptic_full_project.ipynb`](notebooks/elliptic_full_project.ipynb) is **fully pre-rendered** with all cell execution outputs, classification reports, summary comparison tables, and visual plots. Evaluators can review the complete end-to-end analysis directly on GitHub without configuring an environment.
+
+### Option B: Google Colab (One-Click Execution)
+1. Click the **[Open In Colab](https://colab.research.google.com/github/IsaakAlemu/elliptic-illicit-transaction-classification/blob/main/notebooks/elliptic_full_project.ipynb)** badge at the top of this repository.
+2. Switch runtime to GPU: ****Runtime -> Change runtime type -> T4 GPU****.
+3. Run all cells: ****Runtime -> Run all****.
+   - Package installation (`pip install`) runs automatically.
+   - The built-in automated downloader will download the 3 dataset CSV files directly via HTTPS in ~15 seconds—**no Kaggle API token or account required**. (Optional Kaggle API token and Google Drive mounting are also supported).
+
+### Option C: Local Environment Execution
 1. Clone the repository and install dependencies:
    ```bash
-     git clone https://github.com/IsaakAlemu/elliptic-illicit-transaction-classification.git
+   git clone https://github.com/IsaakAlemu/elliptic-illicit-transaction-classification.git
    cd elliptic-illicit-transaction-classification
    pip install -r requirements.txt
    ```
-2. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/ellipticco/elliptic-data-set) and place the three unzipped CSV files into:
-   ```
-   data/elliptic_bitcoin_dataset/
-   ```
-3. Start Jupyter and open the master notebook:
+2. Place the dataset CSV files into `data/elliptic_bitcoin_dataset/` (or let the notebook auto-download them into `../data/elliptic_bitcoin_dataset/` on first run):
+   - `elliptic_txs_features.csv`
+   - `elliptic_txs_classes.csv`
+   - `elliptic_txs_edgelist.csv`
+3. Launch Jupyter Lab or VS Code:
    ```bash
    jupyter lab notebooks/elliptic_full_project.ipynb
    ```
-
-### Option B: Google Colab
-1. Upload `notebooks/elliptic_full_project.ipynb` to Google Colab.
-2. Set runtime type to GPU (**Runtime $\to$ Change runtime type $\to$ T4 GPU**).
-3. Follow the instructions in the first code cell to automatically download the dataset via Kaggle API or mount Google Drive.
-
----
 
 ## 8. Limitations
 
