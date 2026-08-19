@@ -79,6 +79,8 @@ Across all tested models (Random Forest, XGBoost across all feature variants, an
 
 ![F1 Over Time Collapse](figures/f1_over_time_collapse.png)
 
+![Split-Boundary Ablation](figures/split_boundary_ablation.png)
+
 ### 3. Shift Diagnosis: The Model is "Confidently Wrong"
 - **Sufficient Sample Size**: Steps 43–49 contain 22–36 illicit transactions per step (148 illicit total), ruling out small-sample variance.
 - **Licit Stability**: Licit-class F1 remains stable across both periods ($0.991 \to 0.987$), proving the anomaly is illicit-specific.
