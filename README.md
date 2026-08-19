@@ -1,7 +1,7 @@
 # Classifying Illicit Bitcoin Transactions on the Elliptic Data Set
 ### Comparing Tabular, Graph-Engineered, and Graph Neural Network Classifiers with a Statistical Diagnosis of Time-Based Distribution Shift
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IsaakAlemu/elliptic-illicit-transaction-classification/blob/main/notebooks/elliptic_full_project.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/IsaakAlemu/Money-laundering-detection-on-a-transaction-graph/blob/main/notebooks/elliptic_full_project.ipynb)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch Geometric](https://img.shields.io/badge/PyTorch%20Geometric-2.0+-orange.svg)](https://pytorch-geometric.readthedocs.io/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-1.7+-green.svg)](https://xgboost.readthedocs.io/)
@@ -99,7 +99,7 @@ Neither hand-engineered topological indicators nor graph convolution message-pas
 
 ### Project Structure
 ```
-elliptic-illicit-transaction-classification/
+Money-laundering-detection-on-a-transaction-graph/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
@@ -121,7 +121,7 @@ elliptic-illicit-transaction-classification/
 The master notebook [`notebooks/elliptic_full_project.ipynb`](notebooks/elliptic_full_project.ipynb) is **fully pre-rendered** with all cell execution outputs, classification reports, summary comparison tables, and visual plots. Evaluators can review the complete end-to-end analysis directly on GitHub without configuring an environment.
 
 ### Option B: Google Colab (One-Click Execution)
-1. Click the **[Open In Colab](https://colab.research.google.com/github/IsaakAlemu/elliptic-illicit-transaction-classification/blob/main/notebooks/elliptic_full_project.ipynb)** badge at the top of this repository.
+1. Click the **[Open In Colab](https://colab.research.google.com/github/IsaakAlemu/Money-laundering-detection-on-a-transaction-graph/blob/main/notebooks/elliptic_full_project.ipynb)** badge at the top of this repository.
 2. Switch runtime to GPU: ****Runtime -> Change runtime type -> T4 GPU****.
 3. Run all cells: ****Runtime -> Run all****.
    - Package installation (`pip install`) runs automatically.
@@ -130,8 +130,8 @@ The master notebook [`notebooks/elliptic_full_project.ipynb`](notebooks/elliptic
 ### Option C: Local Environment Execution
 1. Clone the repository and install dependencies:
    ```bash
-   git clone https://github.com/IsaakAlemu/elliptic-illicit-transaction-classification.git
-   cd elliptic-illicit-transaction-classification
+   git clone https://github.com/IsaakAlemu/Money-laundering-detection-on-a-transaction-graph.git
+   cd Money-laundering-detection-on-a-transaction-graph
    pip install -r requirements.txt
    ```
 2. Place the dataset CSV files into `data/elliptic_bitcoin_dataset/` (or let the notebook auto-download them into `../data/elliptic_bitcoin_dataset/` on first run):
